@@ -23,49 +23,59 @@
             android:layout_weight="1" />
 
         <RadioButton
-            android:text="MediumPizza"
+            android:text="@string/medium_pizza"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonMedium"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            tools:ignore="HardcodedText" />
 
         <RadioButton
-            android:text="Large Pizza"
+            android:text="@string/large_pizza"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonLarge"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            tools:ignore="HardcodedText" />
 
     </RadioGroup>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/toppings" />
 
     <CheckBox
         android:text="CheckBoxExtraCheese"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/checkBoxCheese"
-        android:layout_marginTop="12dp" />
+        android:layout_marginTop="12dp"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:text="Order"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonOrder"
-        android:onClick="onClickOrder" />
+        android:onClick="onClickOrder"
+        tools:ignore="HardcodedText" />
 
     <CheckBox
-        android:text="CheckBoxDelivery"
+        android:text="@string/checkboxdelivery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/checkBoxDeluvery" />
 
     <TextView
-        android:text="Total Due:"
+        android:text="@string/total_due"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewTotal" />
 
     <TextView
-        android:text="Order Status: Nothing ordered yet"
+        android:text="@string/order_status_nothing_ordered_yet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewStatus" />
