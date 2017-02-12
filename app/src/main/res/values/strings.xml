@@ -7,6 +7,7 @@
     <string name="order_status_nothing_ordered_yet">Order Status: Nothing ordered yet</string>
     <string name="total_due">Total Due:</string>
     <string-array name="toppings">
+        <item>Please select your topping...</item>
         <item>Chicken</item>
         <item>Vegetable</item>
         <item>Cheese</item>

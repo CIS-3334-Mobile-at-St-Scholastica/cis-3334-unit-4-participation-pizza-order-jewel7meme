@@ -20,7 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonSmall"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="18sp" />
 
         <RadioButton
             android:text="@string/medium_pizza"
@@ -28,7 +29,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonMedium"
             android:layout_weight="1"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
 
         <RadioButton
             android:text="@string/large_pizza"
@@ -36,7 +39,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/radioButtonLarge"
             android:layout_weight="1"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
 
     </RadioGroup>
 
@@ -44,7 +49,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
-        android:entries="@array/toppings" />
+        android:drawSelectorOnTop="true"
+        android:textSize="20sp"
+        android:entries="@array/toppings"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
 
     <CheckBox
         android:text="CheckBoxExtraCheese"
@@ -52,7 +61,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/checkBoxCheese"
         android:layout_marginTop="12dp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:textSize="18sp" />
 
     <Button
         android:text="Order"
@@ -60,25 +70,33 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttonOrder"
         android:onClick="onClickOrder"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
 
     <CheckBox
         android:text="@string/checkboxdelivery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBoxDeluvery" />
+        android:id="@+id/checkBoxDeluvery"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:text="@string/total_due"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewTotal" />
+        android:id="@+id/textViewTotal"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
 
     <TextView
         android:text="@string/order_status_nothing_ordered_yet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewStatus" />
+        android:id="@+id/textViewStatus"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
 
 
 </LinearLayout>
