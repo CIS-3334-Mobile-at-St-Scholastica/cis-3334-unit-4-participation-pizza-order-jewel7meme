@@ -60,10 +60,6 @@ public class MainActivity extends AppCompatActivity implements updateViewInterfa
         toppings = getResources().getStringArray(R.array.toppings);
 
         pizzaOrderSystem = new PizzaOrder(this);
-        /*List<String> toppings = new ArrayList<String>();
-        toppings.add("Chicken");
-        toppings.add("Vegetable");
-        toppings.add("Cheese");*/
 
 
         // Creating adapter for spinner
@@ -117,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements updateViewInterfa
 
 
             public void updateView(String orderStatus) {
-                txtStatus.setText("Order Status" + orderStatus);
+                txtStatus.setText("Order Status: " + orderStatus);
             }
 
             public void onClickOrder(View view) {
@@ -135,5 +131,6 @@ public class MainActivity extends AppCompatActivity implements updateViewInterfa
                 //display a pop up message for a long period of time
                 Toast.makeText(getApplicationContext(), "You have ordered a " + orderDescription, Toast.LENGTH_LONG).show();
                 txtTotal.setText("Total Due: " + pizzaOrderSystem.getTotalBill().toString());
+                pizzaOrderSystem.setDelivery(chkbxDelivery.isChecked());
             }
         }
